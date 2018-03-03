@@ -23,8 +23,8 @@ class HomeModel: NSObject , URLSessionDataDelegate{
         // create session
         let defaultSession = Foundation.URLSession(configuration: URLSessionConfiguration.default)
         //start task
-        let task = URLSession.shared.dataTask(with: url){ (data, response, error) in
-       // let task = defaultSession.dataTask(with: url) { (data, response, error) in
+        //let task = URLSession.shared.dataTask(with: url){ (data, response, error) in
+        let task = defaultSession.dataTask(with: url) { (data, response, error) in
             
             if error != nil {
                 print("Failed to download data")
@@ -54,7 +54,7 @@ class HomeModel: NSObject , URLSessionDataDelegate{
         
         var jsonElement = NSDictionary()
         let questions = NSMutableArray()
-            
+        
         for i in 0 ..< jsonResult.count
         {
             
@@ -65,35 +65,32 @@ class HomeModel: NSObject , URLSessionDataDelegate{
             //the following insures none of the JsonElement values are nil through optional binding
             if let Question_ID = jsonElement["Question_ID"] as? String,
                 let Question_Details = jsonElement["Question_Details"] as? String,
-                let title = jsonElement["title"] as? String,
+                let title = jsonElement["Title"] as? String,
                 let Cat_ID = jsonElement["Cat_ID"] as? String,
                 let REmail = jsonElement["REmail"] as? String
             {
+                
                 question.Question_ID = Question_ID
                 question.Question_Details = Question_Details
                 question.title = title
                 question.Cat_ID = Cat_ID
                 question.REmail = REmail
+                
+                
             }
             
             questions.add(question)
+           
+           
         }
         DispatchQueue.main.async(execute: { () -> Void in
             
             self.delegate.itemsDownloaded(items: questions)
             
         })
-
+       
         
-           //loop through each result in the jsonArray
         
-                //cast JSON results as Dictionary
-        
-               //create new question and set its properities
-        
-                //add it to the array
-        
-            // pass the question array back to delegate
         
     }
     
