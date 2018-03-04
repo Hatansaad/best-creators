@@ -5,7 +5,8 @@
 //  Created by HESSA on 3/4/18.
 //  Copyright © 2018 Tsaul developers. All rights reserved.
 //
-import UIKit
+import Foundation
+
 protocol HoModelDelegate {
     func itemsDownloaded(items:NSArray)
 }

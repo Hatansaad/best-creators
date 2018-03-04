@@ -209,10 +209,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="299"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="22t-Pk-2hT">
-                                <rect key="frame" x="107" y="54" width="160" height="159"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1Z-Ql-oN5" customClass="xButton" customModule="تساو_ل" customModuleProvider="target">
                                 <rect key="frame" x="112" y="250" width="150" height="27"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
@@ -329,8 +325,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="flower" translatesAutoresizingMaskIntoConstraints="NO" id="0eP-o3-4HL">
+                                <rect key="frame" x="117" y="64" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="LRl-rf-LHG"/>
+                                    <constraint firstAttribute="width" secondItem="0eP-o3-4HL" secondAttribute="height" multiplier="1:1" id="tS9-6a-96c"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                        <real key="value" value="75"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0eP-o3-4HL" firstAttribute="width" secondItem="0eP-o3-4HL" secondAttribute="height" multiplier="1:1" id="jDa-5G-Sjo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bQi-gf-AWm"/>
                     </view>
                 </viewController>
@@ -493,10 +504,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1HC-7n-U4Q">
-                                <rect key="frame" x="311" y="94" width="48" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="إضافة جواب" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="Q7J-FH-bSh">
                                 <rect key="frame" x="63" y="94" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -517,8 +524,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="flower" translatesAutoresizingMaskIntoConstraints="NO" id="jza-Ji-e1l">
+                                <rect key="frame" x="311" y="85" width="54" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Oh4-8D-JsQ"/>
+                                    <constraint firstAttribute="width" secondItem="jza-Ji-e1l" secondAttribute="height" multiplier="1:1" id="Y5n-4m-SXs"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                        <real key="value" value="75"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jza-Ji-e1l" firstAttribute="width" secondItem="jza-Ji-e1l" secondAttribute="height" multiplier="1:1" id="sKn-6M-Kwi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WrJ-3g-OUR"/>
                     </view>
                     <navigationItem key="navigationItem" title="اضافة جواب" id="QWD-0V-HhP">
@@ -528,7 +550,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVr-V6-nb6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4737" y="804"/>
+            <point key="canvasLocation" x="4736.8000000000002" y="803.74812593703155"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="62F-ao-BGX">
@@ -873,7 +895,7 @@
         <!--الملف الشخصي-->
         <scene sceneID="2gx-hD-iEc">
             <objects>
-                <viewController id="WSQ-gF-CYK" sceneMemberID="viewController">
+                <viewController id="WSQ-gF-CYK" customClass="ProfileViewController" customModule="تساو_ل" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J9y-fZ-SKV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -956,6 +978,9 @@
                         <viewLayoutGuide key="safeArea" id="cMT-1K-JIv"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="الملف الشخصي" image="Profile" id="BbI-ZL-735"/>
+                    <connections>
+                        <outlet property="ProfileView" destination="J9y-fZ-SKV" id="GKH-vX-C3Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eFV-2L-sKd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -980,9 +1005,17 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="KCC-0I-tlX">
-                                <rect key="frame" x="275" y="20" width="84" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="flower" translatesAutoresizingMaskIntoConstraints="NO" id="P6H-hF-OUg">
+                                <rect key="frame" x="285" y="30" width="74" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="YAM-YC-NPt"/>
+                                    <constraint firstAttribute="width" secondItem="P6H-hF-OUg" secondAttribute="height" multiplier="1:1" id="jio-TM-4Ez"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                        <real key="value" value="75"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="النبذة التعريفية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLi-fy-vdJ">
                                 <rect key="frame" x="-101" y="34" width="360" height="89"/>
@@ -1024,12 +1057,15 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="P6H-hF-OUg" firstAttribute="width" secondItem="P6H-hF-OUg" secondAttribute="height" multiplier="1:1" id="971-xk-yQZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Vs-QQ-z9f"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xnn-bm-OiM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4737" y="1480"/>
+            <point key="canvasLocation" x="4736.8000000000002" y="1479.3103448275863"/>
         </scene>
         <!--الأسئلة-->
         <scene sceneID="xzL-93-olF">
@@ -1047,10 +1083,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="210.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F6Y-hh-9q9">
-                                            <rect key="frame" x="311" y="0.0" width="48" height="48"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="اسم المستخدم" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZN-NX-QB0">
                                             <rect key="frame" x="29" y="0.0" width="274" height="26"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1080,12 +1112,26 @@
                                                 <segue destination="eOL-Pk-viI" kind="show" id="imk-1t-DXs"/>
                                             </connections>
                                         </button>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="flower" translatesAutoresizingMaskIntoConstraints="NO" id="QVG-F3-R4X">
+                                            <rect key="frame" x="311" y="-12" width="56" height="68"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="BVC-5X-DQh"/>
+                                                <constraint firstAttribute="width" secondItem="QVG-F3-R4X" secondAttribute="height" multiplier="1:1" id="SM2-Un-s27"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                                    <real key="value" value="75"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="QVG-F3-R4X" firstAttribute="width" secondItem="QVG-F3-R4X" secondAttribute="height" multiplier="1:1" id="BJJ-Oj-wL6"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <color key="tintColor" red="0.80516737699999996" green="0.7984208465" blue="0.0076867458409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="QDetails" destination="m65-ps-H4Y" id="VPJ-FK-uu1"/>
-                                    <outlet property="QProfileImg" destination="F6Y-hh-9q9" id="Iiu-gg-k9i"/>
                                     <outlet property="QTitle" destination="6HL-pX-s87" id="klM-9K-jOL"/>
                                     <outlet property="QUsername" destination="BZN-NX-QB0" id="jKI-8r-TNU"/>
                                     <segue destination="8lq-hJ-p1i" kind="show" id="bJI-hw-pdr"/>
@@ -1191,10 +1237,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="332.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8mD-P3-agp">
-                                            <rect key="frame" x="311" y="0.0" width="48" height="48"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="اسم المستخدم" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6p-wf-Q8x">
                                             <rect key="frame" x="203" y="0.0" width="100" height="26"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1218,7 +1260,23 @@
                                             <rect key="frame" x="29" y="147" width="274" height="142"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="flower" translatesAutoresizingMaskIntoConstraints="NO" id="OPy-7u-WXA">
+                                            <rect key="frame" x="311" y="0.0" width="54" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="7pB-Il-A1s"/>
+                                                <constraint firstAttribute="width" secondItem="OPy-7u-WXA" secondAttribute="height" multiplier="1:1" id="D9P-kg-Db2"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                                    <real key="value" value="75"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="OPy-7u-WXA" firstAttribute="width" secondItem="OPy-7u-WXA" secondAttribute="height" multiplier="1:1" id="Ofp-Na-AwX"/>
+                                        <constraint firstItem="OPy-7u-WXA" firstAttribute="width" secondItem="OPy-7u-WXA" secondAttribute="height" multiplier="1:1" id="jeW-8J-1oV"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <color key="tintColor" red="0.80516737699999996" green="0.7984208465" blue="0.0076867458409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
@@ -2894,7 +2952,6 @@ QgABHEUAARxXAAEcWgABHF8AAAAAAAAEAQAAAAAAAABZAAAAAAAAAAAAAAAAAAEcYQ
         <image name="question-mark" width="64" height="64"/>
         <image name="reply" width="128" height="128"/>
         <image name="upload" width="512" height="512"/>
-        <image name="user" width="128" height="128"/>
         <image name="user-2" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>

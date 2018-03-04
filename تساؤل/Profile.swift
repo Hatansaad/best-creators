@@ -6,7 +6,9 @@
 //  Copyright © 2018 Tsaul developers. All rights reserved.
 //
 
-import UIKit
+
+
+import Foundation
 
 class Profile: NSObject {
     
@@ -28,7 +30,7 @@ class Profile: NSObject {
         
     }
     
-    //construct with @name, @address, @latitude, and @longitude parameters
+    //construct with parameters
     
     init(Email: String, Fname: String, Lname: String, Password: String, Bio: String,  Image:String)
 {

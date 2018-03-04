@@ -23,6 +23,7 @@
 		C69FEA782023AA82009CC1E9 /* xButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69FEA772023AA82009CC1E9 /* xButton.swift */; };
 		C6A808DF204C5EF10019B128 /* HoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A808DE204C5EF00019B128 /* HoModel.swift */; };
 		C6A808E1204C5F950019B128 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A808E0204C5F950019B128 /* Profile.swift */; };
+		C6A808E7204C81A60019B128 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A808E6204C81A60019B128 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		C69FEA772023AA82009CC1E9 /* xButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xButton.swift; sourceTree = "<group>"; };
 		C6A808DE204C5EF00019B128 /* HoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoModel.swift; sourceTree = "<group>"; };
 		C6A808E0204C5F950019B128 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		C6A808E6204C81A60019B128 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,6 @@
 		BC482A35201F7A2700B2706F /* تساؤل */ = {
 			isa = PBXGroup;
 			children = (
-				C6A808DE204C5EF00019B128 /* HoModel.swift */,
 				7305E4AC203C6187004EC873 /* GoogleService-Info.plist */,
 				BC482A36201F7A2700B2706F /* AppDelegate.swift */,
 				BC482A38201F7A2700B2706F /* ViewController.swift */,
@@ -111,7 +112,9 @@
 				BCE8D1CB2040591600F32B05 /* TableViewController.swift */,
 				BCE8D1CD2040696800F32B05 /* TableViewCell.swift */,
 				BC070A772048030E004EE908 /* Question.swift */,
+				C6A808DE204C5EF00019B128 /* HoModel.swift */,
 				C6A808E0204C5F950019B128 /* Profile.swift */,
+				C6A808E6204C81A60019B128 /* ProfileViewController.swift */,
 			);
 			path = "تساؤل";
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				BCE8D1C4204036B500F32B05 /* HomeModel.swift in Sources */,
 				BCAF209D20371FE8008762E9 /* myCell.swift in Sources */,
 				C69FEA782023AA82009CC1E9 /* xButton.swift in Sources */,
+				C6A808E7204C81A60019B128 /* ProfileViewController.swift in Sources */,
 				BC070A782048030E004EE908 /* Question.swift in Sources */,
 				BCE8D1CE2040696800F32B05 /* TableViewCell.swift in Sources */,
 				C6A808E1204C5F950019B128 /* Profile.swift in Sources */,
