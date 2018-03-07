@@ -18,6 +18,9 @@ class Question: NSObject {
     var REmail: String?
     var Cat_ID: String?
 
+    var Fname: String?
+    var Lname: String?
+    var Cat_name: String?
     
     
     //empty constructor

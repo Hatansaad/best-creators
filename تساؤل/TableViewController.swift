@@ -69,7 +69,7 @@ class TableViewController:  UITableViewController ,HomeModelDelegate {
         // Get references to labels of cell
    
         myCell.QTitle!.text = item.title
-        myCell.QUsername!.text  = item.REmail
+        myCell.QUsername!.text  = item.Fname 
         myCell.QDetails!.text  = item.Question_Details
         
         

@@ -14,7 +14,7 @@ class HomeModel: NSObject , URLSessionDataDelegate{
 
     var delegate: HomeModelDelegate!
     // Hit the web service URL
-     let urlPath = "http://tsawul.com/ts7.php"
+     let urlPath = "http://tsawul.com/QuestionTableView.php"
     
     func downloadItems(){
         
@@ -63,20 +63,21 @@ class HomeModel: NSObject , URLSessionDataDelegate{
             let question = Question()
             
             //the following insures none of the JsonElement values are nil through optional binding
-            if let Question_ID = jsonElement["Question_ID"] as? String,
-                let Question_Details = jsonElement["Question_Details"] as? String,
+            if let Question_Details = jsonElement["Question_Details"] as? String ,
                 let title = jsonElement["Title"] as? String,
-                let Cat_ID = jsonElement["Cat_ID"] as? String,
-                let REmail = jsonElement["REmail"] as? String
+                 let Fname = jsonElement["Fname"] as? String,
+                let Lname = jsonElement["Lname"] as? String,
+                let Cat_name = jsonElement["Cat_name"] as? String
+            
             {
                 
-                question.Question_ID = Question_ID
+               
                 question.Question_Details = Question_Details
                 question.title = title
-                question.Cat_ID = Cat_ID
-                question.REmail = REmail
-                
-                
+                question.Fname = Fname
+                question.Lname = Lname
+                question.Cat_name = Cat_name
+               
             }
             
             questions.add(question)
