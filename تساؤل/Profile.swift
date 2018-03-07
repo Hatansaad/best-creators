@@ -19,20 +19,20 @@ class Profile: NSObject {
     var Lname: String?
     var Password: String?
     var Bio: String?
-    var Image: String?
+   // var Image: String?
 
     
     
     //empty constructor
     
-    override init()
+     override init()
     {
         
     }
     
     //construct with parameters
     
-    init(Email: String, Fname: String, Lname: String, Password: String, Bio: String,  Image:String)
+    init(Email: String, Fname: String, Lname: String, Password: String, Bio: String)
 {
         
         self.Email = Email
@@ -40,7 +40,7 @@ class Profile: NSObject {
         self.Lname = Lname
         self.Password = Password
         self.Bio = Bio
-        self.Image = Image
+    //    self.Image = Image
 
     }
     
@@ -48,7 +48,7 @@ class Profile: NSObject {
     //prints object's current state
     
     override var description: String {
-        return "Email: \(Email), Fname: \(Fname), Lname: \(Lname), Password: \(Password) , Bio: \(Bio), Image: \(Image)"
+        return "Email: \(Email), Fname: \(Fname), Lname: \(Lname), Password: \(Password) , Bio: \(Bio)"
         
     }
     

@@ -7,14 +7,14 @@
 //
 import Foundation
 
-protocol HoModelDelegate {
+protocol HoModelDelegate: class {
     func itemsDownloaded(items:NSArray)
 }
 class HoModel: NSObject , URLSessionDataDelegate{
     
     var delegate: HoModelDelegate!
     // Hit the web service URL
-    let urlPath = "http://tsawul.com/ReU.php"
+    let urlPath = "http://tsawul.com/RegUser.php"
     
     func downloadItems(){
         
@@ -63,12 +63,12 @@ class HoModel: NSObject , URLSessionDataDelegate{
             let profile = Profile()
             
             //the following insures none of the JsonElement values are nil through optional binding
-            if let Email = jsonElement["Email"] as? String,
+            if  let Email = jsonElement["Email"] as? String,
                 let Fname = jsonElement["Fname"] as? String,
                 let Lname = jsonElement["Lname"] as? String,
                 let Password = jsonElement["Password"] as? String,
-                let Bio = jsonElement["Bio"] as? String,
-            let Image = jsonElement["Image"] as? String
+                let Bio = jsonElement["Bio"] as? String
+              //  let Image = jsonElement["Image"] as? String
                 
             {
                 
@@ -77,11 +77,11 @@ class HoModel: NSObject , URLSessionDataDelegate{
                 profile.Lname = Lname
                 profile.Password = Password
                 profile.Bio = Bio
-                 profile.Image = Image
+             //    profile.Image = Image
                 
                 
             }
-            
+            print(profile)
             profiles.add(profile)
             
             

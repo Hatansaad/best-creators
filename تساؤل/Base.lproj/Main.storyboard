@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Ab-D3-Ff4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WSQ-gF-CYK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -896,7 +896,7 @@
         <!--الملف الشخصي-->
         <scene sceneID="2gx-hD-iEc">
             <objects>
-                <viewController id="WSQ-gF-CYK" customClass="ProfileViewController" customModule="تساو_ل" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WSQ-gF-CYK" customClass="ProfileInfoViewController" customModule="تساو_ل" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J9y-fZ-SKV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -970,6 +970,20 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="الأسم" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNj-4W-dXu">
+                                <rect key="frame" x="166" y="258" width="78" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="النبذة التعريفية" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0U-Rl-jJ6">
+                                <rect key="frame" x="133" y="287" width="144" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -980,7 +994,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="الملف الشخصي" image="Profile" id="BbI-ZL-735"/>
                     <connections>
+                        <outlet property="ProBio" destination="S0U-Rl-jJ6" id="bCl-Xt-Cnw"/>
+                        <outlet property="ProImage" destination="24V-fj-dD3" id="BYf-Ci-0tm"/>
                         <outlet property="ProfileView" destination="J9y-fZ-SKV" id="GKH-vX-C3Q"/>
+                        <outlet property="proName" destination="eNj-4W-dXu" id="pUy-Fq-knI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eFV-2L-sKd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2973,7 +2990,8 @@ AAAAAAAAAAAAAAEceQ
         <image name="user-2" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zD5-pg-hUM"/>
+        <segue reference="D3a-ts-Xk7"/>
+        <segue reference="5l2-IA-geC"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.80516737699999996" green="0.7984208465" blue="0.0076867458409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
