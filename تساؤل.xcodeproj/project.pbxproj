@@ -17,6 +17,7 @@
 		BC482A4C201F7A2800B2706F /* ______Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC482A4B201F7A2800B2706F /* ______Tests.swift */; };
 		BC4B1E3C20504A1500136861 /* ProfileInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4B1E3B20504A1500136861 /* ProfileInfoViewController.swift */; };
 		BC4B1E3E20504D8D00136861 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4B1E3D20504D8D00136861 /* ProfileViewController.swift */; };
+		BC4B1E402051BDA600136861 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4B1E3F2051BDA600136861 /* Register.swift */; };
 		BCAF209D20371FE8008762E9 /* myCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF209C20371FE8008762E9 /* myCell.swift */; };
 		BCE8D1C4204036B500F32B05 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE8D1C3204036B500F32B05 /* HomeModel.swift */; };
 		BCE8D1CC2040591600F32B05 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE8D1CB2040591600F32B05 /* TableViewController.swift */; };
@@ -52,6 +53,7 @@
 		BC482A4D201F7A2800B2706F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC4B1E3B20504A1500136861 /* ProfileInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoViewController.swift; sourceTree = "<group>"; };
 		BC4B1E3D20504D8D00136861 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		BC4B1E3F2051BDA600136861 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		BCAF209C20371FE8008762E9 /* myCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCell.swift; sourceTree = "<group>"; };
 		BCE8D1C3204036B500F32B05 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		BCE8D1CB2040591600F32B05 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				C6A808E0204C5F950019B128 /* Profile.swift */,
 				BC4B1E3B20504A1500136861 /* ProfileInfoViewController.swift */,
 				BC4B1E3D20504D8D00136861 /* ProfileViewController.swift */,
+				BC4B1E3F2051BDA600136861 /* Register.swift */,
 			);
 			path = "تساؤل";
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				BC482A39201F7A2700B2706F /* ViewController.swift in Sources */,
 				C6A808DF204C5EF10019B128 /* HoModel.swift in Sources */,
 				BCE8D1C4204036B500F32B05 /* HomeModel.swift in Sources */,
+				BC4B1E402051BDA600136861 /* Register.swift in Sources */,
 				BCAF209D20371FE8008762E9 /* myCell.swift in Sources */,
 				C69FEA782023AA82009CC1E9 /* xButton.swift in Sources */,
 				BC070A782048030E004EE908 /* Question.swift in Sources */,
