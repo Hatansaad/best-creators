@@ -11,7 +11,9 @@
     
     class ProfileController: UIViewController {
         
+        @IBOutlet weak var FisrtName: UILabel!
         
+        @IBOutlet weak var BioLabel: UILabel!
         // let URL_GET_TEAMS:String = "http://192.168.43.207/MyWebService/api/getteams.php"
         
         override func viewDidLoad() {
@@ -20,7 +22,7 @@
             
             
             //created NSURL
-            let URL_GET_USER = "http://tsawul.com/register.php";
+            let URL_GET_USER = "http://tsawul.com/RegUser.php";
             
             
             
@@ -32,6 +34,14 @@
             
             //setting the method to post
             request.httpMethod = "GET"
+            let ProIte:Profile = Profile()
+            
+            //  let item: Profile = feedItems[indexPath.row] as! Profile
+            
+            //Pro.ProImage!.text  = ProIte.Image
+            FisrtName!.text = ProIte.Fname
+            BioLabel!.text = ProIte.Bio
+            
             
             
             //creating a task to send the post request
@@ -70,20 +80,20 @@
                         let profiles = Profile()
                         
                         //the following insures none of the JsonElement values are nil through optional binding
-                        if let Email = jsonElement["Email"] as? String ,
+                        if //let Email = jsonElement["Email"] as? String ,
                             let FName = jsonElement["Fname"] as? String,
-                            let LName = jsonElement["Lname"] as? String,
-                             let Password = jsonElement["Password"] as? String,
+                           // let LName = jsonElement["Lname"] as? String,
+                           //  let Password = jsonElement["Password"] as? String,
                             let Bio = jsonElement["Bio"] as? String
                             
                         {
                         //displaying the data
-                        print("Email -> ", Email)
+                       // print("Email -> ", Email)
                         print("FName -> ", FName)
-                        print("LName -> ", LName)
-                        print("Password -> ", Password)
+                       // print("LName -> ", LName)
+                       // print("Password -> ", Password)
                         print("Bio -> ", Bio)
-                        print("===================")
+                      //  print("===================")
                         print("")
                         
                     }

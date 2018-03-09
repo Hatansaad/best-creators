@@ -995,10 +995,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="الملف الشخصي" image="Profile" id="BbI-ZL-735"/>
                     <connections>
-                        <outlet property="ProBio" destination="S0U-Rl-jJ6" id="bCl-Xt-Cnw"/>
-                        <outlet property="ProImage" destination="24V-fj-dD3" id="BYf-Ci-0tm"/>
-                        <outlet property="ProfileView" destination="J9y-fZ-SKV" id="GKH-vX-C3Q"/>
-                        <outlet property="proName" destination="eNj-4W-dXu" id="pUy-Fq-knI"/>
+                        <outlet property="BioLabel" destination="S0U-Rl-jJ6" id="bHj-nx-Nm5"/>
+                        <outlet property="FisrtName" destination="eNj-4W-dXu" id="Nvc-Ky-k4Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eFV-2L-sKd" userLabel="First Responder" sceneMemberID="firstResponder"/>
