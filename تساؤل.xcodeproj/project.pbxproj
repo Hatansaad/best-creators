@@ -23,6 +23,7 @@
 		BCE8D1CC2040591600F32B05 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE8D1CB2040591600F32B05 /* TableViewController.swift */; };
 		BCE8D1CE2040696800F32B05 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE8D1CD2040696800F32B05 /* TableViewCell.swift */; };
 		C62CA22E203CB06300F38074 /* UIElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62CA22D203CB06300F38074 /* UIElement.swift */; };
+		C68983422052A56600F5DD34 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68983412052A56500F5DD34 /* ProfileController.swift */; };
 		C69FEA782023AA82009CC1E9 /* xButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69FEA772023AA82009CC1E9 /* xButton.swift */; };
 		C6A808DF204C5EF10019B128 /* HoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A808DE204C5EF00019B128 /* HoModel.swift */; };
 		C6A808E1204C5F950019B128 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A808E0204C5F950019B128 /* Profile.swift */; };
@@ -59,6 +60,7 @@
 		BCE8D1CB2040591600F32B05 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		BCE8D1CD2040696800F32B05 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		C62CA22D203CB06300F38074 /* UIElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIElement.swift; sourceTree = "<group>"; };
+		C68983412052A56500F5DD34 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		C69FEA772023AA82009CC1E9 /* xButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xButton.swift; sourceTree = "<group>"; };
 		C6A808DE204C5EF00019B128 /* HoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoModel.swift; sourceTree = "<group>"; };
 		C6A808E0204C5F950019B128 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				BC4B1E3B20504A1500136861 /* ProfileInfoViewController.swift */,
 				BC4B1E3D20504D8D00136861 /* ProfileViewController.swift */,
 				BC4B1E3F2051BDA600136861 /* Register.swift */,
+				C68983412052A56500F5DD34 /* ProfileController.swift */,
 			);
 			path = "تساؤل";
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				C6A808DF204C5EF10019B128 /* HoModel.swift in Sources */,
 				BCE8D1C4204036B500F32B05 /* HomeModel.swift in Sources */,
 				BC4B1E402051BDA600136861 /* Register.swift in Sources */,
+				C68983422052A56600F5DD34 /* ProfileController.swift in Sources */,
 				BCAF209D20371FE8008762E9 /* myCell.swift in Sources */,
 				C69FEA782023AA82009CC1E9 /* xButton.swift in Sources */,
 				BC070A782048030E004EE908 /* Question.swift in Sources */,
