@@ -15,7 +15,6 @@
 		BC482A3E201F7A2700B2706F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC482A3D201F7A2700B2706F /* Assets.xcassets */; };
 		BC482A41201F7A2700B2706F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC482A3F201F7A2700B2706F /* LaunchScreen.storyboard */; };
 		BC482A4C201F7A2800B2706F /* ______Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC482A4B201F7A2800B2706F /* ______Tests.swift */; };
-		BC4B1E3C20504A1500136861 /* ProfileInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4B1E3B20504A1500136861 /* ProfileInfoViewController.swift */; };
 		BC4B1E3E20504D8D00136861 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4B1E3D20504D8D00136861 /* ProfileViewController.swift */; };
 		BC4B1E402051BDA600136861 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4B1E3F2051BDA600136861 /* Register.swift */; };
 		BCAF209D20371FE8008762E9 /* myCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF209C20371FE8008762E9 /* myCell.swift */; };
@@ -53,7 +52,6 @@
 		BC482A47201F7A2800B2706F /* تساؤلTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "تساؤلTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC482A4B201F7A2800B2706F /* ______Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "______Tests.swift"; sourceTree = "<group>"; };
 		BC482A4D201F7A2800B2706F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC4B1E3B20504A1500136861 /* ProfileInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoViewController.swift; sourceTree = "<group>"; };
 		BC4B1E3D20504D8D00136861 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		BC4B1E3F2051BDA600136861 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		BCAF209C20371FE8008762E9 /* myCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCell.swift; sourceTree = "<group>"; };
@@ -122,7 +120,6 @@
 				BC070A772048030E004EE908 /* Question.swift */,
 				C6A808DE204C5EF00019B128 /* HoModel.swift */,
 				C6A808E0204C5F950019B128 /* Profile.swift */,
-				BC4B1E3B20504A1500136861 /* ProfileInfoViewController.swift */,
 				BC4B1E3D20504D8D00136861 /* ProfileViewController.swift */,
 				BC4B1E3F2051BDA600136861 /* Register.swift */,
 				C68983412052A56500F5DD34 /* ProfileController.swift */,
@@ -265,7 +262,6 @@
 				BC070A782048030E004EE908 /* Question.swift in Sources */,
 				BCE8D1CE2040696800F32B05 /* TableViewCell.swift in Sources */,
 				C6A808E1204C5F950019B128 /* Profile.swift in Sources */,
-				BC4B1E3C20504A1500136861 /* ProfileInfoViewController.swift in Sources */,
 				BC4B1E3E20504D8D00136861 /* ProfileViewController.swift in Sources */,
 				BCE8D1CC2040591600F32B05 /* TableViewController.swift in Sources */,
 				BC482A37201F7A2700B2706F /* AppDelegate.swift in Sources */,

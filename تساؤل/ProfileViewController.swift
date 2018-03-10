@@ -11,6 +11,13 @@ import UIKit
 class ProfileViewController: UIViewController , HoModelDelegate{
 
     
+    @IBOutlet var ProView: UIView!
+    
+    
+    @IBOutlet weak var FirstN: UILabel!
+    
+    @IBOutlet weak var BIOP: UILabel!
+    @IBOutlet weak var Pic: UIImageView!
     
     var feedItems: NSArray = NSArray()
     var selectedP: Profile = Profile()
@@ -29,17 +36,23 @@ class ProfileViewController: UIViewController , HoModelDelegate{
         
         
         
-        
         // Do any additional setup after loading the view.
-        let Pro = ProfileInfoViewController()
+        //let Pro = ProfileInfoViewController()
+        /*
         let ProIte:Profile = Profile()
+      
         
       //  let item: Profile = feedItems[indexPath.row] as! Profile
         
         //Pro.ProImage!.text  = ProIte.Image
-        Pro.proName!.text = ProIte.Fname
-        Pro.ProBio!.text = ProIte.Bio
+       // let ProIte: Profile = feedItems[0] as! Profile
+        FirstN!.text = ProIte.Fname
+        BIOP!.text = ProIte.Bio
         
+            for item in  feedItems {
+         print("Found \(item)")
+         }
+        */
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,24 +65,41 @@ class ProfileViewController: UIViewController , HoModelDelegate{
         feedItems = items
         
         
-        /* for item in  feedItems {
+        
+        
+        //let ProIte:Profile = Profile()
+        
+        
+        //  let item: Profile = feedItems[indexPath.row] as! Profile
+        
+        //Pro.ProImage!.text  = ProIte.Image
+        let ProIte: Profile = feedItems[0] as! Profile
+        FirstN!.text = ProIte.Fname
+        BIOP!.text = ProIte.Bio
+        
+        //var img = base64Convert(ProIte.Image) as! UIImage
+        
+        //Pic!.image = ProIte.Image
+        //print(ProIte)
+        
+        
+     /*    for item in  feedItems {
          print("Found \(item)")
          }*/
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    // Get the question to be shown
-
+    func base64Convert(base64String: String?) -> UIImage{
+        /*if (base64String?.isEmpty)! {
+            return #imageLiteral(resourceName: "no_image_found")
+        }else {*/
+            // !!! Separation part is optional, depends on your Base64String !!!
+            let temp = base64String?.components(separatedBy: ",")
+            let dataDecoded : Data = Data(base64Encoded: temp![1], options: .ignoreUnknownCharacters)!
+            let decodedimage = UIImage(data: dataDecoded)
+            return decodedimage!
+        }
     
-    
+ 
     
     
     

@@ -14,7 +14,7 @@ class HoModel: NSObject , URLSessionDataDelegate{
     
     var delegate: HoModelDelegate!
     // Hit the web service URL
-    let urlPath = "http://tsawul.com/RegUser.php"
+    let urlPath = "http://tsawul.com/RegUsers.php"
     
     func downloadItems(){
         
@@ -49,6 +49,8 @@ class HoModel: NSObject , URLSessionDataDelegate{
             // Parse the data into json object
             jsonResult = try JSONSerialization.jsonObject(with: data, options:JSONSerialization.ReadingOptions.allowFragments) as! NSArray
             
+     
+            
         } catch let error as NSError {
             print(error)}
         
@@ -60,6 +62,7 @@ class HoModel: NSObject , URLSessionDataDelegate{
             
             jsonElement = jsonResult[i] as! NSDictionary
             
+       
             let profile = Profile()
             
             //the following insures none of the JsonElement values are nil through optional binding
@@ -68,22 +71,23 @@ class HoModel: NSObject , URLSessionDataDelegate{
                 let Lname = jsonElement["Lname"] as? String,
                 let Password = jsonElement["Password"] as? String,
                 let Bio = jsonElement["Bio"] as? String
-              //  let Image = jsonElement["Image"] as? String
+                //let Image = jsonElement["Image"] as? String
                 
             {
+               // print(Image)
                 
                 profile.Email = Email
                 profile.Fname = Fname
                 profile.Lname = Lname
                 profile.Password = Password
                 profile.Bio = Bio
-             //    profile.Image = Image
+                //profile.Image = Image
                 
                 
             }
-            print(profile)
             profiles.add(profile)
             
+        
             
         }
         DispatchQueue.main.async(execute: { () -> Void in

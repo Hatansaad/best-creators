@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x62a;&#x633;&#x627;&#x648;&#x654;&#x644;/ProfileViewController.swift"
-            timestampString = "542237561.214354"
+            timestampString = "542402432.556017"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "ProfileViewController"
             landmarkType = "3">
          </BreakpointContent>
