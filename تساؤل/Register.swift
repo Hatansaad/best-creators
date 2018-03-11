@@ -9,22 +9,25 @@
 import UIKit
 
 class Register: UIViewController {
+    @IBOutlet weak var textFieldEmail: UITextField!
     @IBOutlet weak var textFieldFname: UITextField!
     @IBOutlet weak var textFieldLname: UITextField!
-    @IBOutlet weak var textFieldEmail: UITextField!
     @IBOutlet weak var textFieldPass: UITextField!
-    let URL_SAVE_USER = "http://tsawul.com/register.php";
+    let URL_SAVE_USER = "http://tsawul.com/register2.php";
     
     @IBAction func buttonRegister(_ sender: UIButton) {
         
         let requestURL = NSURL(string:URL_SAVE_USER)
         let request = NSMutableURLRequest(url: requestURL! as URL)
         request.httpMethod = "POST"
+        let Email = textFieldEmail.text
         let Fname = textFieldFname.text
         let Lname = textFieldLname.text
-        let Email = textFieldEmail.text
         let pass = textFieldPass.text
-        let postParameters = "Fname="+Fname!+"&Lname="+Lname!+"&Email="+Email!+"Password="+pass!;
+        let Bio = "nil"
+        let Image = "nil"
+        
+        let postParameters = "Email="+Email!+"&Fname="+Fname!+"&Lname="+Lname!+"&Password="+pass!+"&Bio="+Bio+"Image="+Image;
         request.httpBody = postParameters.data(using: String.Encoding.utf8)
         
         let url: URL = URL(string: URL_SAVE_USER)!
