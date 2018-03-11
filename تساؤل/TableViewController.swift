@@ -83,4 +83,24 @@ class TableViewController:  UITableViewController ,HomeModelDelegate {
         return 200.0
     }
   
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let Storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let DvC = Storyboard.instantiateViewController(withIdentifier: "ViewAnswersControllerTableViewController") as! ViewAnswersControllerTableViewController
+        let item1: Question = feedItems[indexPath.row] as! Question
+        
+       
+        DvC.getUserName = item1.Fname as! String
+        DvC.getTitle = item1.title as! String
+        DvC.getDetails = item1.Question_Details as! String
+        
+        
+        
+        self.navigationController?.pushViewController(DvC, animated: true)
+        
+        
+        
+    }
+    
 }
