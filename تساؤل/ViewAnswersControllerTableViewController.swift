@@ -14,16 +14,17 @@ class ViewAnswersControllerTableViewController: UITableViewController {
     var getTitle = String()
     var getDetails = String()
     
- 
+  
+    var question: Question?
+    
     @IBOutlet weak var QCell: DetailedQuestionCell!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-      
-        QCell.userName.text! = getUserName
-        QCell.title.text! = getTitle
-        QCell.content.text! = getDetails
+        QCell.userName.text! = (question?.Fname)!
+        QCell.title.text! = (question?.title)!
+        QCell.content.text! = (question?.Question_Details)!
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,6 +43,8 @@ class ViewAnswersControllerTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
+    
+ 
 
     
 }

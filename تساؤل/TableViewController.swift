@@ -86,21 +86,31 @@ class TableViewController:  UITableViewController ,HomeModelDelegate {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let Storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let DvC = Storyboard.instantiateViewController(withIdentifier: "ViewAnswersControllerTableViewController") as! ViewAnswersControllerTableViewController
-        let item1: Question = feedItems[indexPath.row] as! Question
-        
        
-        DvC.getUserName = item1.Fname as! String
-        DvC.getTitle = item1.title as! String
-        DvC.getDetails = item1.Question_Details as! String
-        
-        
-        
-        self.navigationController?.pushViewController(DvC, animated: true)
-        
-        
-        
+        selectedQuestion = feedItems[indexPath.row] as! Question
+       performSegue(withIdentifier: "MasterToDetail", sender: selectedQuestion)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // copy selected question from user and pass it through the segue
+        
+        
+        
+        if segue.identifier == "MasterToDetail" {
+             let receiverVC = segue.destination as! ViewAnswersControllerTableViewController
+             receiverVC.question = sender as? Question
+            
+            
+        }
+    }
+    
+
 }
+
+
+
+
+
+
+

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G0m-Np-7GY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Ab-D3-Ff4">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1148,7 +1148,7 @@
                                     <outlet property="QDetails" destination="m65-ps-H4Y" id="VPJ-FK-uu1"/>
                                     <outlet property="QTitle" destination="6HL-pX-s87" id="klM-9K-jOL"/>
                                     <outlet property="QUsername" destination="BZN-NX-QB0" id="jKI-8r-TNU"/>
-                                    <segue destination="zbB-7b-9hA" kind="show" id="bQM-Bd-Mmc"/>
+                                    <segue destination="zbB-7b-9hA" kind="show" identifier="MasterToDetail" id="bQM-Bd-Mmc"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -4247,7 +4247,6 @@ AAAAAAAAAAAAAAEceQ
         <image name="user-2" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7lf-Fy-46u"/>
         <segue reference="zD5-pg-hUM"/>
         <segue reference="RMi-xe-bUV"/>
     </inferredMetricsTieBreakers>
