@@ -1178,7 +1178,7 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="162" id="afr-9l-nyX" customClass="DetailedQuestionCell" customModule="تساو_ل" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="162"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="afr-9l-nyX" id="FSK-lS-GVZ">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="QCell" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="afr-9l-nyX" id="FSK-lS-GVZ">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="161.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -1237,6 +1237,9 @@
                             <outlet property="delegate" destination="zbB-7b-9hA" id="6ts-Ae-eBm"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="QATableView" destination="OJW-hu-CRX" id="8BM-GM-KDt"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r2c-C5-sUq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

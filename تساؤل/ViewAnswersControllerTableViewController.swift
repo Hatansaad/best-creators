@@ -15,16 +15,21 @@ class ViewAnswersControllerTableViewController: UITableViewController {
     var getDetails = String()
     
   
+    @IBOutlet var QATableView: UITableView!
+    
     var question: Question?
     
-    @IBOutlet weak var QCell: DetailedQuestionCell!
+    //@IBOutlet weak var QCell: DetailedQuestionCell!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        QCell.userName.text! = (question?.Fname)!
+        
+        print("hiiiiii")
+        print(question)
+        
+       /* QCell.userName.text! = (question?.Fname)!
         QCell.title.text! = (question?.title)!
-        QCell.content.text! = (question?.Question_Details)!
+        QCell.content.text! = (question?.Question_Details)! */
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,14 +41,23 @@ class ViewAnswersControllerTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
-    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cellIdentifier: String = "QCell"
+        let myCell: DetailedQuestionCell = QATableView.dequeueReusableCell(withIdentifier: cellIdentifier)! as! DetailedQuestionCell
+        myCell.userName.text! = (question?.Fname)!
+        myCell.title.text! = (question?.title)!
+        myCell.content.text! = (question?.Question_Details)!
+        
+        return myCell
+    }
  
 
     
