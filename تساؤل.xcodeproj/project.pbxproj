@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7305E4AD203C6187004EC873 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7305E4AC203C6187004EC873 /* GoogleService-Info.plist */; };
+		73E95761205AFB2B00AD96D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73E95760205AFB2B00AD96D4 /* GoogleService-Info.plist */; };
+		73E95762205AFB2B00AD96D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73E95760205AFB2B00AD96D4 /* GoogleService-Info.plist */; };
+		73E95764205B18E000AD96D4 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E95763205B18E000AD96D4 /* NetworkingService.swift */; };
+		73E95766205B1FFF00AD96D4 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E95765205B1FFF00AD96D4 /* registerViewController.swift */; };
 		BC070A782048030E004EE908 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC070A772048030E004EE908 /* Question.swift */; };
 		BC45E20C20557AD300D8B931 /* ViewAnswersControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC45E20B20557AD300D8B931 /* ViewAnswersControllerTableViewController.swift */; };
 		BC45E20E2055814200D8B931 /* DetailedQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC45E20D2055814200D8B931 /* DetailedQuestionCell.swift */; };
@@ -29,6 +32,7 @@
 		C69FEA782023AA82009CC1E9 /* xButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69FEA772023AA82009CC1E9 /* xButton.swift */; };
 		C6A808DF204C5EF10019B128 /* HoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A808DE204C5EF00019B128 /* HoModel.swift */; };
 		C6A808E1204C5F950019B128 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A808E0204C5F950019B128 /* Profile.swift */; };
+		C96AF1947333E2F4F5EF2C40 /* Pods_______.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1AAA76855528E51038ACD6 /* Pods_______.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +46,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7305E4AC203C6187004EC873 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1BCBDEA8F20884BFB869D776 /* Pods-تساؤل.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-تساؤل.debug.xcconfig"; path = "Pods/Target Support Files/Pods-تساؤل/Pods-تساؤل.debug.xcconfig"; sourceTree = "<group>"; };
+		6EA18BE427AA25CDE197392B /* Pods_______Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_______Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73E95760205AFB2B00AD96D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		73E95763205B18E000AD96D4 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		73E95765205B1FFF00AD96D4 /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
+		83455CE94E518A6F340DE90C /* Pods-تساؤل.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-تساؤل.release.xcconfig"; path = "Pods/Target Support Files/Pods-تساؤل/Pods-تساؤل.release.xcconfig"; sourceTree = "<group>"; };
+		AA1AAA76855528E51038ACD6 /* Pods_______.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_______.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC070A772048030E004EE908 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		BC45E20B20557AD300D8B931 /* ViewAnswersControllerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnswersControllerTableViewController.swift; sourceTree = "<group>"; };
 		BC45E20D2055814200D8B931 /* DetailedQuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedQuestionCell.swift; sourceTree = "<group>"; };
@@ -75,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C96AF1947333E2F4F5EF2C40 /* Pods_______.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +99,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		941382DB7D0FB45A2BD1C064 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BCBDEA8F20884BFB869D776 /* Pods-تساؤل.debug.xcconfig */,
+				83455CE94E518A6F340DE90C /* Pods-تساؤل.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BC482A2A201F7A2700B2706F = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +115,8 @@
 				BC482A35201F7A2700B2706F /* تساؤل */,
 				BC482A4A201F7A2800B2706F /* تساؤلTests */,
 				BC482A34201F7A2700B2706F /* Products */,
+				941382DB7D0FB45A2BD1C064 /* Pods */,
+				CD413E4E5622BEDFB068799D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,7 +132,7 @@
 		BC482A35201F7A2700B2706F /* تساؤل */ = {
 			isa = PBXGroup;
 			children = (
-				7305E4AC203C6187004EC873 /* GoogleService-Info.plist */,
+				73E95760205AFB2B00AD96D4 /* GoogleService-Info.plist */,
 				BC482A36201F7A2700B2706F /* AppDelegate.swift */,
 				BC482A38201F7A2700B2706F /* ViewController.swift */,
 				BC482A3A201F7A2700B2706F /* Main.storyboard */,
@@ -130,6 +152,8 @@
 				BC4B1E3F2051BDA600136861 /* Register.swift */,
 				C68983412052A56500F5DD34 /* ProfileController.swift */,
 				C68983432052C13200F5DD34 /* krbooti.swift */,
+				73E95763205B18E000AD96D4 /* NetworkingService.swift */,
+				73E95765205B1FFF00AD96D4 /* registerViewController.swift */,
 			);
 			path = "تساؤل";
 			sourceTree = "<group>";
@@ -152,6 +176,15 @@
 			path = costomElement;
 			sourceTree = "<group>";
 		};
+		CD413E4E5622BEDFB068799D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA1AAA76855528E51038ACD6 /* Pods_______.framework */,
+				6EA18BE427AA25CDE197392B /* Pods_______Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC482A50201F7A2800B2706F /* Build configuration list for PBXNativeTarget "تساؤل" */;
 			buildPhases = (
+				8F73006EA0F2F4157CE20577 /* [CP] Check Pods Manifest.lock */,
 				BC482A2F201F7A2700B2706F /* Sources */,
 				BC482A30201F7A2700B2706F /* Frameworks */,
 				BC482A31201F7A2700B2706F /* Resources */,
+				E215E4C6556778C9930D231F /* [CP] Embed Pods Frameworks */,
+				3E1E162BFD878817E29F96E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,7 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC482A41201F7A2700B2706F /* LaunchScreen.storyboard in Resources */,
-				7305E4AD203C6187004EC873 /* GoogleService-Info.plist in Resources */,
+				73E95761205AFB2B00AD96D4 /* GoogleService-Info.plist in Resources */,
 				BC482A3E201F7A2700B2706F /* Assets.xcassets in Resources */,
 				BC482A3C201F7A2700B2706F /* Main.storyboard in Resources */,
 			);
@@ -246,10 +282,71 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73E95762205AFB2B00AD96D4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E1E162BFD878817E29F96E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-تساؤل/Pods-تساؤل-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F73006EA0F2F4157CE20577 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-تساؤل-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E215E4C6556778C9930D231F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-تساؤل/Pods-تساؤل-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-تساؤل/Pods-تساؤل-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC482A2F201F7A2700B2706F /* Sources */ = {
@@ -259,6 +356,7 @@
 				BC45E20E2055814200D8B931 /* DetailedQuestionCell.swift in Sources */,
 				C62CA22E203CB06300F38074 /* UIElement.swift in Sources */,
 				BC482A39201F7A2700B2706F /* ViewController.swift in Sources */,
+				73E95764205B18E000AD96D4 /* NetworkingService.swift in Sources */,
 				BC45E20C20557AD300D8B931 /* ViewAnswersControllerTableViewController.swift in Sources */,
 				C68983442052C13200F5DD34 /* krbooti.swift in Sources */,
 				C6A808DF204C5EF10019B128 /* HoModel.swift in Sources */,
@@ -269,6 +367,7 @@
 				C69FEA782023AA82009CC1E9 /* xButton.swift in Sources */,
 				BC070A782048030E004EE908 /* Question.swift in Sources */,
 				BCE8D1CE2040696800F32B05 /* TableViewCell.swift in Sources */,
+				73E95766205B1FFF00AD96D4 /* registerViewController.swift in Sources */,
 				C6A808E1204C5F950019B128 /* Profile.swift in Sources */,
 				BC4B1E3E20504D8D00136861 /* ProfileViewController.swift in Sources */,
 				BCE8D1CC2040591600F32B05 /* TableViewController.swift in Sources */,
@@ -423,6 +522,7 @@
 		};
 		BC482A51201F7A2800B2706F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BCBDEA8F20884BFB869D776 /* Pods-تساؤل.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -437,6 +537,7 @@
 		};
 		BC482A52201F7A2800B2706F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83455CE94E518A6F340DE90C /* Pods-تساؤل.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
